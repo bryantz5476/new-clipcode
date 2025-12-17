@@ -102,8 +102,6 @@ export function Testimonials() {
         {/* Carousel Container */}
         <div
           className="relative max-w-2xl mx-auto mb-20"
-          onMouseEnter={() => setIsAutoPlaying(false)}
-          onMouseLeave={() => setIsAutoPlaying(true)}
         >
           <AnimatePresence mode="wait">
             <motion.div
@@ -114,8 +112,8 @@ export function Testimonials() {
               transition={{ duration: 0.4, ease: "easeInOut" }}
             >
               <div className="relative group">
-                {/* Magic Border Layer (Hover Only) - Updated to Neon Comet */}
-                <div className="absolute -inset-[2px] rounded-[2rem] overflow-hidden opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                {/* Magic Border Layer (Permanent) */}
+                <div className="absolute -inset-[2px] rounded-[2rem] overflow-hidden opacity-100">
                   <motion.div
                     className="absolute inset-[-100%] w-[300%] h-[300%] left-[-100%] top-[-100%]"
                     style={{
@@ -126,11 +124,11 @@ export function Testimonials() {
                   />
                 </div>
 
-                {/* Outer Glow (Hover Only) */}
-                <div className="absolute -inset-1 rounded-[2rem] bg-cyan-500/20 blur-xl opacity-0 group-hover:opacity-50 transition-opacity duration-200" />
+                {/* Outer Glow (Permanent) */}
+                <div className="absolute -inset-1 rounded-[2rem] bg-cyan-500/20 blur-xl opacity-50" />
 
                 {/* Content Container */}
-                <div className="relative rounded-[2rem] bg-gray-900/90 backdrop-blur-xl border border-white/5 p-6 md:p-8 text-center md:text-left transition-colors group-hover:border-blue-500/30">
+                <div className="relative rounded-[2rem] bg-gray-900/90 backdrop-blur-xl border border-blue-500/30 p-6 md:p-8 text-center md:text-left transition-colors">
                   {/* Decorative Quote Icon */}
                   <div className="absolute top-6 right-8 opacity-20">
                     <Quote className="w-8 h-8 md:w-10 md:h-10 text-blue-500" />

@@ -203,8 +203,13 @@ export default function PlasmaBackground() {
         window.addEventListener('mousemove', handleMouseMove);
 
         const resize = () => {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
+            // Limit DPR to 1.5 for performance on high-res screens
+            // Background fluids don't need perfect pixel ratio
+            const dpr = Math.min(window.devicePixelRatio || 1, 1.5);
+            canvas.width = window.innerWidth * dpr;
+            canvas.height = window.innerHeight * dpr;
+            canvas.style.width = window.innerWidth + 'px';
+            canvas.style.height = window.innerHeight + 'px';
             gl.viewport(0, 0, canvas.width, canvas.height);
             gl.uniform2f(uResolution, canvas.width, canvas.height);
         };

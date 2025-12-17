@@ -57,15 +57,15 @@ export function Hero({ onScrollToPlans, onScrollToContact }: { onScrollToPlans: 
               initial="hidden"
               animate="visible"
               variants={revealVariants}
-              className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-6 leading-[1.1] font-display tracking-tight"
+              className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-6 leading-tight font-display tracking-tight"
             >
               Creamos Experiencias <br />
-              <span className="relative">
+              <span className="relative inline-block">
                 <span className="bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent">
                   Digitales de Élite
                 </span>
                 <motion.svg
-                  className="absolute w-full h-3 -bottom-1 left-0 text-blue-500 opacity-60"
+                  className="absolute w-full h-2 md:h-3 -bottom-1 left-0 text-blue-500 opacity-60"
                   viewBox="0 0 100 10"
                   preserveAspectRatio="none"
                   initial={{ pathLength: 0 }}
@@ -82,7 +82,7 @@ export function Hero({ onScrollToPlans, onScrollToContact }: { onScrollToPlans: 
               initial="hidden"
               animate="visible"
               variants={revealVariants}
-              className="text-lg md:text-xl text-gray-400 mb-10 leading-relaxed max-w-lg"
+              className="text-base md:text-xl text-gray-400 mb-8 md:mb-10 leading-relaxed max-w-lg"
             >
               Transformamos tu visión en una presencia web dominante.
               Diseño premium, velocidad extrema y conversión optimizada.
@@ -93,17 +93,17 @@ export function Hero({ onScrollToPlans, onScrollToContact }: { onScrollToPlans: 
               initial="hidden"
               animate="visible"
               variants={revealVariants}
-              className="flex flex-col sm:flex-row gap-5"
+              className="flex flex-col sm:flex-row gap-4 sm:gap-5"
             >
               {/* Primary Button */}
               <Button
                 size="lg"
                 onClick={onScrollToPlans}
-                className="relative bg-transparent border border-white/20 text-white px-10 py-7 text-base rounded-lg tracking-wide backdrop-blur-sm transition-all duration-300 overflow-hidden group hover:border-white hover:text-[#020617]"
+                className="relative w-full sm:w-auto bg-transparent border border-white/20 text-white px-8 py-6 md:px-10 md:py-7 text-sm md:text-base rounded-lg tracking-wide backdrop-blur-sm transition-all duration-300 overflow-hidden group hover:border-white hover:text-[#020617]"
                 data-testid="button-ver-planes"
               >
                 <div className="absolute inset-0 bg-white transform -translate-x-full transition-transform duration-300 ease-out group-hover:translate-x-0" />
-                <span className="relative flex items-center z-10">
+                <span className="relative flex items-center justify-center z-10">
                   VER PLANES
                   <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </span>
@@ -115,11 +115,11 @@ export function Hero({ onScrollToPlans, onScrollToContact }: { onScrollToPlans: 
                 variant="outline"
                 // ⚠️ AQUI ESTA EL CAMBIO: Llama directamente a tu WhatsApp
                 onClick={() => window.open('https://wa.me/34607328443?text=Hola,%20me%20gustar%C3%ADa%20agendar%20una%20Demo%20para%20potenciar%20mi%20negocio.', '_blank')}
-                className="relative bg-transparent border border-white/20 text-white px-10 py-7 text-base rounded-lg tracking-wide backdrop-blur-sm transition-all duration-300 overflow-hidden group hover:border-white hover:text-[#020617]"
+                className="relative w-full sm:w-auto bg-transparent border border-white/20 text-white px-8 py-6 md:px-10 md:py-7 text-sm md:text-base rounded-lg tracking-wide backdrop-blur-sm transition-all duration-300 overflow-hidden group hover:border-white hover:text-[#020617]"
                 data-testid="button-contratar-ya"
               >
                 <div className="absolute inset-0 bg-white transform -translate-x-full transition-transform duration-300 ease-out group-hover:translate-x-0" />
-                <span className="relative flex items-center z-10">
+                <span className="relative flex items-center justify-center z-10">
                   AGENDAR DEMO
                   <MousePointer2 className="ml-2 w-4 h-4" />
                 </span>
@@ -132,7 +132,7 @@ export function Hero({ onScrollToPlans, onScrollToContact }: { onScrollToPlans: 
               initial="hidden"
               animate="visible"
               variants={revealVariants}
-              className="mt-12 flex items-center gap-6 text-sm text-gray-500 font-medium"
+              className="mt-10 md:mt-12 flex items-center gap-6 text-sm text-gray-500 font-medium"
             >
               <div className="flex -space-x-3">
                 {[
