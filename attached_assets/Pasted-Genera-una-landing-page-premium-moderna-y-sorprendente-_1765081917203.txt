@@ -1,0 +1,174 @@
+Genera una landing page premium, moderna y sorprendente para un negocio que vende mis servicios web a través de 3 planes (Básico, Profesional y E-commerce con Shopify).
+
+Debe cumplir absolutamente todo lo siguiente:
+
+🎨 ESTILO, TONO Y ESTÉTICA
+
+Paleta OBLIGATORIA: NEGRO, BLANCO y AZUL MARINO PROFUNDO (#001a33 o similar).
+
+PROHIBIDO usar amarillo o tonos cálidos similares.
+
+Estética: moderna, elegante, corporativa, seria, premium, cero vibe gamer, cero vibe iglesia.
+
+UX limpia, profesional, que inspire máxima confianza a dueños de negocios.
+
+🎥 DINAMISMO Y EFECTOS
+
+Toda la web DEBE tener:
+
+Animaciones suaves y elegantes (Framer Motion o similar).
+
+Parallax profesional.
+
+Interacción al cursor (efecto de movimiento o reacción en el hero).
+
+Cards infinitas animadas (loop horizontal continuo).
+
+Secciones dinámicas (transiciones, fades, desplazamientos).
+
+Micro-interacciones en botones y elementos importantes.
+
+🧩 ARQUITECTURA DEL PROYECTO
+
+Stack: React 19+, Vite (última versión estable), Tailwind CSS v4.
+
+Router: react-router-dom con BrowserRouter.
+
+Todo debe ser Frontend en un solo proyecto, nada de backend separado.
+
+Debe incluir archivo netlify.toml en la raíz con EXACTAMENTE:
+
+[build]
+  command = "npm run build"
+  publish = "dist/public"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+
+Optimizado para que Netlify lo acepte sin modificar package.json.
+
+🛒 INTEGRACIÓN CON SHOPIFY
+
+La web será un e-commerce donde vendo mis servicios, así que:
+
+Crear archivo para conectar a Shopify Storefront API.
+
+Crear hooks para obtener productos/planes desde Shopify.
+
+Incluir ProductCard que cargue datos reales de Shopify.
+
+Crear carrito y redirigir al checkout de Shopify.
+
+Añadir instrucciones en README de cómo conectar la tienda (variables:
+
+SHOPIFY_STORE_DOMAIN
+
+SHOPIFY_STOREFRONT_TOKEN)
+
+🧱 SECCIONES DE LA LANDING PAGE
+
+La landing debe ser de ALTO IMPACTO y contener:
+
+1. Hero Principal (NO slider)
+
+Pieza visual sorprendente.
+
+Usar movimientos, efectos y parallax.
+
+Interacción al cursor (shape movement, blobs, líneas animadas o cualquier idea creativa que NO sean partículas — sorpréndeme).
+
+Colores: negro + azul marino profundo.
+
+Headline fuerte y poderoso.
+
+Dos CTAs: Ver planes y Contratar ya.
+
+2. Banner con Loop Infinito
+
+Mensajes, beneficios o logos en movimiento continuo horizontal.
+
+Estilo elegante, premium.
+
+3. Servicios (cards animadas en loop infinito)
+
+Carrusel infinito de cards modernas con animación.
+
+Estilo futurista/empresarial, no gamer.
+
+Cada card con hover dinámico (tilt/scale suave).
+
+4. Los 3 Planes (Básico, Profesional, E-commerce)
+
+Cada card debe tener:
+
+Diseño premium.
+
+Animaciones.
+
+CTA de compra (desde Shopify).
+
+Explicación corta de beneficios.
+
+Descripción de los planes (copiar tal cual):
+
+Plan Básico: Web simple de 3 secciones, ideal para negocios que quieren presencia básica sin invertir demasiado.
+
+Plan Profesional: Web moderna, actualizada, optimizada, con sistema de citas integrado. Pensada para negocios que quieren dar un salto real.
+
+Plan E-commerce: Web conectada totalmente a Shopify para tener la potencia y legalidad de una tienda profesional con motor propio.
+
+5. Sección “¿Por qué te conviene cada plan?”
+
+Explicar de forma profesional por qué elegir:
+
+El Plan Profesional,
+
+O el Plan E-commerce.
+Con bullets orientados a beneficios, no características.
+
+6. Galería Moderna (NO cuadriculada)
+
+Diseño de tipo collage/masonry.
+
+Movimientos suaves.
+
+7. CTA Final Potente
+
+Directo, profesional.
+
+Que llame a contratar.
+
+🎯 ESTRATEGIAS DE MARKETING DIGITAL (INTEGRADAS EN LA WEB)
+
+Prueba social con testimonios y cifras reales.
+
+Autoridad (números, experiencia, logos).
+
+Urgencia suave.
+
+Beneficios antes que características.
+
+Sección de confianza y garantías.
+
+Copywriting profesional para empresarios.
+
+🧾 EXTRAS IMPORTANTES
+
+Todo debe funcionar en Replit.
+
+Todo debe compilar sin tocar configuraciones manuales.
+
+Zero basura visual, zero colores fuera de la paleta.
+
+Diseño de agencia: creativo, elegante, sorprendente.
+
+Nada infantil, nada simple, nada repetitivo.
+
+No uses partículas si no quieres—puedes usar waves, blobs, shapes, líneas animadas, depth layers, etc.
+
+⚠️ FINAL DEL PROMPT
+
+GENERAR el proyecto COMPLETO con todo lo anterior, con animaciones, dinamismo y diseño elegante, profesional e impactante.
